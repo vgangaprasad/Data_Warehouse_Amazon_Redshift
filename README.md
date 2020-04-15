@@ -47,16 +47,16 @@ This table is distributed by the `artist_id` field and also sorted based on the 
 
 Following fieds are extracted from the staging_events table and loaded into the users table.
 
-sessionId
-timestamp
-level
-location
-userAgent
+sessionId    
+timestamp     
+level     
+location     
+userAgent     
 
 Following fieds are extracted from the staging_events table and loaded into the users table.
 
-song_id
-artist_id
+song_id     
+artist_id     
 
 
 #### users - dimension table
@@ -67,11 +67,11 @@ This table is distributed by the `user_id` field and also sorted based on the `u
 
 Following fieds are extracted from the staging_events table and loaded into the users table.
 
-userId
-firstname
-lastname
-gender
-level 
+userId     
+firstname     
+lastname     
+gender     
+level      
 
 
 #### songs - dimension table
@@ -82,11 +82,11 @@ This table is distributed by the `artist_id` field and also sorted based on the 
 
 Following fieds are extracted from the staging_songs table and loaded into the songs table.
 
-song_id, 
-title, 
-artist_id, 
-year, 
-duration 
+song_id     
+title     
+artist_id      
+year     
+duration      
 
 #### artists - dimension table
 
@@ -96,10 +96,10 @@ This table is distributed by the `artist_id` field and also sorted based on the 
 
 Following fieds are extracted from the staging_songs table and loaded into the artists table.
 
-artist_name, 
-artist_location, 
-artist_latitude, 
-artist_longitude 
+artist_name     
+artist_location      
+artist_latitude     
+artist_longitude     
 
 #### time - dimension table
 
@@ -109,10 +109,10 @@ The table has as a distribution key, and sorted by `year`
 
 Timestamp field is extracted from the staging_events table and transformed it to the following fields and loaded into the time table.
 
-time
-hour
-day
-week
-month
-year
-weekday
+time     
+hour     
+day     
+week     
+month     
+year     
+weekday     
